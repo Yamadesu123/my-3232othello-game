@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>32×32オセロゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="avatar-left" src="" class="avatar" style="display:none;" alt="Aさん">
+    <img id="avatar-right" src="" class="avatar" style="display:none;" alt="Bさん">
+    <h1>32×32オセロゲーム</h1>
+    <h2>プレイヤーはAさんとBさんです。画像を選択してゲームを開始してください！</h2>
+    <div id="avatar-selector">
+    <div>
+        Aさんの画像: <input type="file" id="blackInput" accept="image/*">
+    </div>
+    <div>
+        Bさんの画像: <input type="file" id="whiteInput" accept="image/*">
+    </div>
+</div>
+    <div id="turn-display">現在のターンはAさんです</div>
+    <div id="board"></div>
+    <script src="script.js"></script>
+</body>
+</html>
